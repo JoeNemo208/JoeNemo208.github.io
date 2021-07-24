@@ -2,17 +2,880 @@
 <html>
      <link href="https://cdn.jsdelivr.net/gh/JoeNemo208/clib208@bc2d460b7651bded0c97356b0c9fa9c998d66ed8/style.css" rel="stylesheet">
     <head>
-        <meta charset="utf-8">
-        <title>New webpage</title>
-    </head>
-   
-    <body>
-        <h1>Hi!</h1>
-<div>Hello World</div>
-        <a href="/apples">aaa</a>
-    <script src="https://cdn.jsdelivr.net/gh/JoeNemo208/RecFunctions@ef56b5e7b7c393510405b8d136bcd5f45769c2a7/script.js"></script>
-    <script>
     
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Template Webpage 2.0</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+         
+  
+    <!--Set up-->
+    <style>
+    :root{
+
+    }
+    
+    *{
+    position:relative;
+    box-sizing: border-box;
+    color:black;
+    }
+    
+    /* width */
+::-webkit-scrollbar {
+  width: 20px;
+ 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(230, 230, 230);
+  border-radius:8px;
+    
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-radius:8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(120, 120, 120);
+}
+    
+    </style>
+    <!--Animations!-->
+    <style>
+    @keyframes fadein{
+    from{
+    opacity:0;
+    }
+    to{
+    opacity:1;
+    }
+    }
+    @keyframes leftin{
+    from{
+    left:-100%;
+    }
+    to{
+    left:0%;
+    }
+    }
+    
+     @keyframes rightin{
+    from{
+    left:100%;
+    }
+    to{
+    left:0%;
+    }
+    }
+    @keyframes scalein{
+    from{
+    transform:scale(3.0);    
+    }
+    to{
+    transform:scale(1.0);
+    }
+    }
+    
+    @keyframes rotatein{
+    from{
+    transform:rotate(360deg);    
+    }
+    to{
+    transform:rotate(0deg);
+    }
+    }
+    
+    @keyframes spinin{
+    from{
+      
+    transform:matrix(0.1,0,0,0.1,0,0) rotate(360deg) rotateX(0deg);
+    
+    }
+    to{
+    
+    transform:matrix(1,0,0,1,0,0) rotate(0deg) rotateX(360deg);
+    }
+    
+    }
+    
+    @keyframes newbody{
+    from{
+    transform:rotateX(360deg) rotate(360deg) scale(0.5);
+    }
+    to{
+    transform:rotateX(0deg) rotate(0deg) scale(1);    
+    }
+    }
+    
+    @keyframes nothing{
+        
+    }
+    /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+    </style>
+    <!-- Example-->
+    <style>
+    
+    .example1{
+    /*general*/
+    color:rgb(0,0,0);
+    border:rgb(0, 0, 0) 1px solid;
+    margin:2px;
+    padding:2px;
+    background-color:rgb(255,255,255);
+    float:none;
+    overflow:auto;
+    
+    animation: newbody 1s linear 0s 1 normal;
+    animation-fill-mode:none;
+      
+  
+      background-size:auto;
+      
+    outline: 0px solid black;
+    left:0px;
+    right:0px;
+    /*position:*/
+    
+    
+    /*text*/
+    font:30px "Open Sans";
+    text-align:center;
+    text-decoration:none;
+    text-transform:none;
+    text-indent:0px;
+    letter-spacing:0px;
+    word-spacing:0px;
+    line-height:auto;
+    white-space:auto; /*no-wrap*/
+    text-shadow:0px 0px 0px black; /* x ,y blur color*/
+    
+    /*size*/
+    width:auto;
+    height:auto;
+    max-width:auto;
+    opacity:1;
+    
+    /*other*/
+    border-radius:0px;
+    box-shadow:0px 0px 0px black;
+    
+    
+     
+       /*
+       matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+       
+       
+       animation-name: example; 
+       animation-duration: 5s; 
+       animation-timing-function: linear;
+       animation-delay: 2s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       
+background-color background-image
+background-repeat
+background-attachment
+background-position
+
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+
+       */
+    }
+    </style>
+    <!--Real "stuff"-->
+    <style>
+    
+  body{
+
+  animation-fill-mode:none;
+  
+  }
+  
+    .title1{
+        /*general*/
+    color:rgb(0,0,0);
+    border:rgb(0, 0, 0) 1px solid;
+    margin:2px;
+    padding:2px;
+    background-color:rgb(255,255,255);
+    float:none;
+    overflow:auto;
+    
+    animation: nothing 1s linear 0s 1 normal;
+    animation-fill-mode:none;
+      
+  
+      background-size:auto;
+      
+    outline: 0px solid black;
+    left:0px;
+    right:0px;
+    /*position:*/
+    
+    
+    /*text*/
+    font:30px "Open Sans";
+    text-align:center;
+    text-decoration:none;
+    text-transform:none;
+    text-indent:0px;
+    letter-spacing:0px;
+    word-spacing:0px;
+    line-height:auto;
+    white-space:auto; /*no-wrap*/
+    text-shadow:0px 0px 0px black; /* x ,y blur color*/
+    
+    /*size*/
+    width:auto;
+    height:auto;
+    max-width:auto;
+    opacity:1;
+    
+    /*other*/
+    border-radius:0px;
+    box-shadow:0px 0px 0px black;
+    
+    
+     
+    }
+   
+   .title1:hover{
+    background-color:rgb(252, 216, 171);
+    transition:background-color 1s ease;
+    }
+    
+    .subtitle1{
+        /*general*/
+    color:rgb(0,0,0);
+    border:rgb(0, 0, 0) 1px solid;
+    margin:5px;
+    padding:5px;
+    background-color:rgb(255, 248, 191);
+    float:none;
+    overflow:auto;
+    
+    animation: nothing 1s linear 0s 1 normal;
+    animation-fill-mode:none;
+      
+  
+      background-size:auto;
+      
+    outline: 0px solid black;
+    left:0px;
+    right:0px;
+    /*position:*/
+    
+    
+    /*text*/
+    font:25px "Open Sans";
+    text-align:center;
+    text-decoration:none;
+    text-transform:none;
+    text-indent:0px;
+    letter-spacing:0px;
+    word-spacing:0px;
+    line-height:auto;
+    white-space:auto; /*no-wrap*/
+    text-shadow:0px 0px 0px black; /* x ,y blur color*/
+    
+    /*size*/
+    width:auto;
+    height:auto;
+    max-width:auto;
+    opacity:1;
+    
+    /*other*/
+    border-radius:0px;
+    box-shadow:0px 0px 0px black;
+    
+    
+     
+    }
+     .subtitle1:hover{
+    background-color:rgb(219, 253, 255);
+    transition:background-color 1s ease;
+    }
+    
+    
+    
+    .button1{
+       /*general*/
+    color:rgb(0,0,0);
+    border:rgb(0, 0, 0) 1px solid;
+    margin:0px;
+    padding:15px;
+    background-color:rgb(255,255,255);
+    float:none;
+    overflow:auto;
+    
+    animation: newbody 1s linear 0s 1 normal;
+    animation-fill-mode:none;
+      
+  
+      background-size:auto;
+      
+    outline: 0px solid black;
+    left:0px;
+    right:0px;
+    /*position:*/
+    
+    
+    /*text*/
+    font:30px "Open Sans";
+    text-align:center;
+    text-decoration:none;
+    text-transform:none;
+    text-indent:0px;
+    letter-spacing:0px;
+    word-spacing:0px;
+    line-height:auto;
+    white-space:auto; /*no-wrap*/
+    text-shadow:0px 0px 0px black; /* x ,y blur color*/
+    
+    /*size*/
+    width:auto;
+    height:auto;
+    max-width:auto;
+    opacity:1;
+    
+    /*other*/
+    border-radius:0px;
+    box-shadow:0px 0px 0px black;
+    
+    
+     
+    }
+    .button1:hover{
+    background-color:rgb(255, 238, 217);
+    transition:background-color 1s ease;
+    }
+    
+     .navbutton1{
+       /*general*/
+    color:rgb(0,0,0);
+    border:rgb(0, 0, 0) 1px solid;
+    margin:0px;
+    padding:5px;
+    background-color:rgb(255,255,255);
+    float:none;
+    overflow:auto;
+    
+    animation: newbody 1s linear 0s 1 normal;
+    animation-fill-mode:none;
+      
+  
+      background-size:auto;
+      
+    outline: 0px solid black;
+    left:0px;
+    right:0px;
+    /*position:*/
+ 
+    
+    /*text*/
+    font:15px "Open Sans";
+    text-align:center;
+    text-decoration:none;
+    text-transform:none;
+    text-indent:0px;
+    letter-spacing:0px;
+    word-spacing:0px;
+    line-height:auto;
+    white-space:auto; /*no-wrap*/
+    text-shadow:0px 0px 0px black; /* x ,y blur color*/
+    
+    /*size*/
+    width:100px;
+    height:auto;
+    max-width:auto;
+    opacity:1;
+    
+    /*other*/
+    border-radius:0px;
+    box-shadow:0px 0px 0px black;
+    
+    
+     
+    }
+    .navbutton1:hover{
+    background-color:rgb(255, 238, 217);
+    transition:background-color 1s ease;
+    }
+    
+    .content1{
+        /*general*/
+    color:rgb(0,0,0);
+    border:rgb(0, 0, 0) 1px solid;
+    margin:2px;
+    padding:2px;
+    background-color:rgb(255,255,255);
+    float:none;
+    overflow:auto;
+    
+    animation: nothing 1s linear 0s 1 normal;
+    animation-fill-mode:none;
+      
+  
+      background-size:auto;
+      
+    outline: 0px solid black;
+    left:0px;
+    right:0px;
+    /*position:*/
+    
+    
+    /*text*/
+    font:20px "Open Sans";
+    text-align:center;
+    text-decoration:none;
+    text-transform:none;
+    text-indent:0px;
+    letter-spacing:0px;
+    word-spacing:0px;
+    line-height:auto;
+    white-space:auto; /*no-wrap*/
+    text-shadow:0px 0px 0px black; /* x ,y blur color*/
+    
+    /*size*/
+    width:auto;
+    height:auto;
+    max-width:auto;
+    opacity:1;
+    
+    /*other*/
+    border-radius:0px;
+    box-shadow:0px 0px 0px black;
+    
+    
+     
+    }
+    .content1:hover{
+    background-color:rgb(255, 238, 217);
+    transition:background-color 1s ease;
+    }
+    
+        .footer1{
+        /*general*/
+    color:rgb(0,0,0);
+    border:rgb(0, 0, 0) 1px solid;
+    margin:0px;
+    padding:5px;
+    background-color:rgb(255,255,255);
+    float:none;
+    overflow:auto;
+    
+    animation: nothing 1s linear 0s 1 normal;
+    animation-fill-mode:none;
+      
+  
+      background-size:auto;
+      
+    outline: 0px solid black;
+    left:0px;
+    right:0px;
+    /*position:*/
+    
+    
+    /*text*/
+    font:20px "Open Sans";
+    text-align:center;
+    text-decoration:none;
+    text-transform:none;
+    text-indent:0px;
+    letter-spacing:0px;
+    word-spacing:0px;
+    line-height:auto;
+    white-space:auto; /*no-wrap*/
+    text-shadow:0px 0px 0px black; /* x ,y blur color*/
+    
+    /*size*/
+    width:auto;
+    height:auto;
+    max-width:auto;
+    opacity:1;
+    
+    /*other*/
+    border-radius:0px;
+    box-shadow:0px 0px 0px black;
+    
+    
+     
+    }
+    .footer1:hover{
+    background-color:rgb(255, 238, 217);
+    transition:background-color 1s ease;
+    }
+    
+      .navbar1{
+        /*general*/
+    color:rgb(0,0,0);
+    border:rgb(0, 0, 0) 1px solid;
+    margin:0px;
+    padding:2px;
+    background-color:rgb(255,255,255);
+    float:left;
+    overflow:auto;
+    
+    animation: nothing 1s linear 0s 1 normal;
+    animation-fill-mode:none;
+      
+  
+      background-size:auto;
+      
+    outline: 0px solid black;
+    left:0px;
+    right:0px;
+    /*position:*/
+    
+    
+    /*text*/
+    font:20px "Open Sans";
+    text-align:center;
+    text-decoration:none;
+    text-transform:none;
+    text-indent:0px;
+    letter-spacing:0px;
+    word-spacing:0px;
+    line-height:auto;
+    white-space:auto; /*no-wrap*/
+    text-shadow:0px 0px 0px black; /* x ,y blur color*/
+    
+    /*size*/
+    width:50px;
+    height:40px;
+    max-width:auto;
+    opacity:1;
+    
+    /*other*/
+    border-radius:0px;
+    box-shadow:0px 0px 0px black;
+    
+    
+     
+    }
+    .navbar1:hover{
+    background-color:rgb(255, 238, 217);
+    transition:background-color 1s ease;
+    }
+    
+    
+    </style>
+    <!--Not temp style-->
+    <style>
+    #imgpro{
+    background-color:rgb(191, 224, 255);
+    position:absolute; 
+    left:510px; 
+    top:0px;
+    border-radius:50%;
+    border: 2px rgb(117, 179, 255) solid;
+    padding:0px;
+    }
+    #imgpro:hover{
+    background-color:rgb(89, 161, 255);
+    
+    }
+    
+    </style>
+    
+    </head>
+    <body>
+    <!--
+    <span style="font-family:'Material Icons'; font-size:30px;">verified</span>
+    -->
+    
+    <h1 class="title1">Title Here</h1>
+    
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/cute/Blank.png" width="50" height="50" style="" id="imgpro">
+   
+    
+<div class="navbar1" id="navbarop" style="position:absolute; top:2px; left:5px;"><span style="font-family:'Material Icons'">menu</span></div>
+
+    <a class="navbutton1" href="javascript:
+    page=1;
+    timer=100;
+    void 0;">Thing 1</a>
+    
+    <a class="navbutton1" href="javascript:
+    page=2;
+    timer=100;
+    void 0;">Thing 2</a>
+    
+    <a class="navbutton1" href="javascript:
+    page=3;
+    timer=100;
+    void 0;">Thing 3</a>
+    
+    <a class="navbutton1" href="javascript:
+    page=4;
+    timer=100;
+    void 0;">Thing 4</a>
+    <br>
+    <br>
+    
+    
+    <div class="content1">
+    
+    <div class="subtitle1">Bananaaaa</div>
+    
+    <div style="">apples</div>
+    
+   <a href="#"> <span style="font-family:'Material Icons'; font-size:100px;">home</span></a>
+   
+   
+   
+   
+   </div>
+  
+   
+   <div class="content1" id="mem">
+    Page 2
+  <!--  <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/avatars/aqualine-ultimate.png" width="400"> -->
+   </div>
+   
+   
+   <div class="content1">
+Page 3
+   </div>
+   <div class="content1">
+    Page 4
+   </div>
+   <div id="signin">
+   
+    
+    <input type="text" class="info1">
+    <br>
+     <input type="text" class="info1">
+     <br>
+     <input type="text" class="info1">
+     <br>
+<button id="subm">Submit</button>
+
+   </div>
+   <br>
+   <br>
+   <br>
+<div class="footer1">
+<a href="#">Example</a>
+<a href="#">Example</a>
+<a href="#">Example</a>
+<br>
+<a href="#">Example</a>
+<a href="#">Example</a>
+<a href="#">Example</a>
+<br>
+<a href="#">Example</a>
+<a href="#">Example</a>
+<a href="#">Example</a>
+<br>
+<a href="#">Example</a>
+<a href="#">Example</a>
+<a href="#">Example</a>
+
+</div>   
+   
+   
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/gh/JoeNemo208/JSLib@f556b384f071b7cfce02eb20813948aab3c5c73f/script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/gh/JoeNemo208/RecFunctions@ef56b5e7b7c393510405b8d136bcd5f45769c2a7/script.js"></script>
+    
+    <script>
+  //console.log(Element.prototype)
+    var prof=getId("imgpro");
+    var signin=getId("signin");
+    var subm=getId("subm");
+    var info1=getClass("info1");
+    var te1=getId("typeenter1")
+    
+
+
+    
+    var CheckLS=function(a,b){
+    var ls=localStorage.getItem(a);
+    if(ls!==undefined && ls!==NaN && ls!==null && ls!==""){
+    return ls;
+    }  
+    else{
+    return b;
+    }
+    };
+    
+  // localStorage.clear();
+   /*
+    var checkIn=function(){
+         var pass=window.prompt("What is the password? If first time, do anything to set the password.");
+    var passw=CheckLS("webpage-208-passw","First time.")
+    if(passw==="First time."){
+    localStorage.setItem("webpage-208-passw",passw);  
+    window.alert('Welcome new member')
+    }
+    else{
+    if(pass===passw){
+     localStorage.setItem("webpage-208-passw",passw);
+     window.alert('Welcome back!')
+    }
+    else{
+    checkIn();
+    }
+    }
+    };
+    checkIn();
+    */
+    
+    var avatar=CheckLS("webpage-208-avatar","aqualine-seed");
+var password=CheckLS("webpage-208-password","1234");
+var fcolor=CheckLS("webpage-208-fcolor","rgb(184, 238, 255)");
+/*
+    for(var i=0;i<20;i++){
+    var b=document.createElement("br");
+    getTag("body")[0].appendChild(b);
+    }*/
+  //  console.log(MatchStrings("  d","ba","add"));
+  var page=1;
+  var timer=100;
+  var nav=getId("navbarop");
+  var navdis=false;
+  var navhov=false;
+  
+var body=getTag("body")[0];
+nav.addEventListener('click',function(){
+if(navhov===false){
+navhov=true;
+}
+else if(navhov===true){
+navhov=false;
+}
+
+})
+
+
+var doIt=function(){
+
+if(navhov===true){
+navdis=true;
+}
+var buttons=getClass("button1");
+var navbuttons=getClass("navbutton1");
+var content1=getClass("content1");
+
+if(navdis===false){
+for(var i=0;i<navbuttons.length;i++){
+navbuttons[i].style.display="none";
+}
+}
+
+if(navdis===true){
+for(var i=0;i<navbuttons.length;i++){
+navbuttons[i].style.display="block";
+}
+}
+
+navdis=false;
+
+
+
+for(var i=0;i<navbuttons.length;i++){
+
+if(page===i+1){
+content1[i].style.display="block";
+}
+else if(page===-1){
+signin.style.display="block";
+content1[i].style.display="none";
+}
+
+else{
+content1[i].style.display="none";
+signin.style.display="none"
+}
+
+}
+
+
+timer=timer-10;
+if(timer>=0){
+body.style.animation="newbody 1s linear 0s 1 normal";
+
+
+}
+else{
+body.style.animation="";
+}
+
+body.style.backgroundColor=fcolor;
+if(avatar!==""){
+prof.src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/avatars/"+avatar+".png";
+}
+console.log(localStorage);
+//localStorage.clear();
+};
+var p1=function(){
+page=-1;
+timer=100;
+};
+prof.addEventListener("click",p1);
+
+
+var submIt=function(){
+if(info1[0].value!==""){
+avatar=info1[0].value;
+}
+if(info1[1].value!==""){
+password=info1[1].value;
+}
+if(info1[2].value!==""){
+fcolor=info1[2].value;
+}
+
+
+/*
+avatar=CheckLS("webpage-208-avatar",info1[0].value);
+password=CheckLS("webpage-208-password",info1[1].value);
+fcolor=CheckLS("webpage-208-fcolor",info1[2].value);
+*/
+localStorage.setItem("webpage-208-avatar",avatar);
+localStorage.setItem("webpage-208-password",password);
+localStorage.setItem("webpage-208-fcolor",fcolor);
+
+prof.src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/avatars/"+avatar+".png";
+
+//window.alert("Avatar: "+avatar+"\n Password: "+password+" Fcolor: "+fcolor);
+
+for(var i=0;i<info1.length;i++){
+info1[i].value="";
+}
+};
+subm.addEventListener("click",submIt);
+
+window.setInterval(doIt,100)
+
+
+/*('body').on("click mousedown mouseup focus blur keydown change dblclick mousemove mouseover mouseout mousewheel keydown keyup keypress textInput touchstart touchmove touchend touchcancel resize scroll zoom select change submit reset",function(e){
+     console.log(e);
+}); */
+
     </script>
     </body>
 </html>
