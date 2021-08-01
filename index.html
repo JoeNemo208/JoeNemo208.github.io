@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-     <link href="https://cdn.jsdelivr.net/gh/JoeNemo208/clib208@bc2d460b7651bded0c97356b0c9fa9c998d66ed8/style.css" rel="stylesheet">
     <head>
     
     
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>Template Webpage 2.0</title>
+        <title>Template Webpage 1.9</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         
         
@@ -129,9 +128,12 @@
     </style>
     <!-- Example-->
     <style>
+    	a[href^="https"],a[href^="javascript:"]{
     
+    	}
     .example1{
     /*general*/
+     background: none url("") no-repeat fixed center;
     color:rgb(0,0,0);
     border:rgb(0, 0, 0) 1px solid;
     margin:2px;
@@ -212,6 +214,7 @@ font-family
   
     .title1{
         /*general*/
+         background: none url("") no-repeat fixed center;
     color:rgb(0,0,0);
     border:rgb(0, 0, 0) 1px solid;
     margin:2px;
@@ -264,6 +267,7 @@ font-family
     }
     
     .subtitle1{
+         background: none url("") no-repeat fixed center;
         /*general*/
     color:rgb(0,0,0);
     border:rgb(0, 0, 0) 1px solid;
@@ -318,7 +322,8 @@ font-family
     
     
     .button1{
-       /*general*/
+       /*general*/ 
+       background: none url("") no-repeat fixed center;
     color:rgb(0,0,0);
     border:rgb(0, 0, 0) 1px solid;
     margin:0px;
@@ -370,6 +375,7 @@ font-family
     }
     
      .navbutton1{
+          background: none url("") no-repeat fixed center;
        /*general*/
     color:rgb(0,0,0);
     border:rgb(0, 0, 0) 1px solid;
@@ -423,6 +429,7 @@ font-family
     
     .content1{
         /*general*/
+         background: none url("") no-repeat fixed center;
     color:rgb(0,0,0);
     border:rgb(0, 0, 0) 1px solid;
     margin:2px;
@@ -475,6 +482,7 @@ font-family
     
         .footer1{
         /*general*/
+         background: none url("") no-repeat fixed center;
     color:rgb(0,0,0);
     border:rgb(0, 0, 0) 1px solid;
     margin:0px;
@@ -527,11 +535,12 @@ font-family
     
       .navbar1{
         /*general*/
+         background: none url("") no-repeat fixed center;
     color:rgb(0,0,0);
     border:rgb(0, 0, 0) 1px solid;
     margin:0px;
     padding:2px;
-    background-color:rgb(255,255,255);
+    background-color:rgb(145, 255, 255);
     float:left;
     overflow:auto;
     
@@ -577,14 +586,68 @@ font-family
     transition:background-color 1s ease;
     }
     
+    .img1{
+        /*general*/
+        
+    color:rgb(0,0,0);
+    border:rgb(0, 0, 0) 1px solid;
+    margin:0px;
+    padding:2px;
+    background-color:rgb(145, 255, 255);
+    float:left;
+    overflow:auto;
+   
     
+     background: lightblue url("https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/butterfly.png")no-repeat fixed center;
+     
+    animation: nothing 1s linear 0s 1 normal;
+    animation-fill-mode:none;
+      
+  
+      background-size:auto;
+      
+    outline: 0px solid black;
+    left:0px;
+    right:0px;
+    /*position:*/
+    
+    
+    /*text*/
+    font:20px "Open Sans";
+    text-align:center;
+    text-decoration:none;
+    text-transform:none;
+    text-indent:0px;
+    letter-spacing:0px;
+    word-spacing:0px;
+    line-height:auto;
+    white-space:auto; /*no-wrap*/
+    text-shadow:0px 0px 0px black; /* x ,y blur color*/
+    
+    /*size*/
+    width:auto;
+    height:auto;
+    max-width:auto;
+    opacity:1;
+    
+    /*other*/
+    border-radius:0px;
+    box-shadow:0px 0px 0px black;
+    
+    
+     
+    }
+    .img1:hover{
+    background-color:rgb(255, 238, 217);
+    transition:background-color 1s ease;
+    }
     </style>
     <!--Not temp style-->
     <style>
     #imgpro{
     background-color:rgb(191, 224, 255);
     position:absolute; 
-   left:95%; 
+    left:90%; 
     top:0px;
     border-radius:50%;
     border: 2px rgb(117, 179, 255) solid;
@@ -609,31 +672,32 @@ font-family
    
     
 <div class="navbar1" id="navbarop" style="position:absolute; top:2px; left:5px;"><span style="font-family:'Material Icons'">menu</span></div>
-
-    <a class="navbutton1" href="javascript:
-    page=1;
-    timer=100;
+    <nav>
+    <a class="navbutton1 page1" href="javascript:
+  
+    changePage(1);
     void 0;">Thing 1</a>
     
-    <a class="navbutton1" href="javascript:
-    page=2;
-    timer=100;
+    <a class="navbutton1 page2" href="javascript:
+    
+    changePage(2);
     void 0;">Thing 2</a>
     
-    <a class="navbutton1" href="javascript:
-    page=3;
-    timer=100;
+    <a class="navbutton1 page3" href="javascript:
+    
+    changePage(3);
     void 0;">Thing 3</a>
     
-    <a class="navbutton1" href="javascript:
-    page=4;
-    timer=100;
+    <a class="navbutton1 page4" href="javascript:
+    changePage(4);
+    
     void 0;">Thing 4</a>
+    </nav>
     <br>
     <br>
     
-    
-    <div class="content1">
+ 
+    <div class="content1 btn">
     
     <div class="subtitle1">Bananaaaa</div>
     
@@ -647,19 +711,20 @@ font-family
    </div>
   
    
-   <div class="content1" id="mem">
+   <div class="content1 btn" id="mem">
     Page 2
   <!--  <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/avatars/aqualine-ultimate.png" width="400"> -->
    </div>
    
    
-   <div class="content1">
+   <div class="content1 btn">
+   <div class="img1">Howdy</div>
 Page 3
    </div>
-   <div class="content1">
+   <div class="content1 btn">
     Page 4
    </div>
-   <div id="signin">
+   <div id="signin" class="content1 btn">
    
     
     <input type="text" class="info1">
@@ -674,6 +739,7 @@ Page 3
    <br>
    <br>
    <br>
+  <footer>
 <div class="footer1">
 <a href="#">Example</a>
 <a href="#">Example</a>
@@ -692,16 +758,18 @@ Page 3
 <a href="#">Example</a>
 
 </div>   
+</footer>
    
    
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
    
     <script src="https://cdn.jsdelivr.net/gh/JoeNemo208/JSLib@f556b384f071b7cfce02eb20813948aab3c5c73f/script.js"></script>
     
-    <script src="https://cdn.jsdelivr.net/gh/JoeNemo208/RecFunctions@0cb8d32fe16fbb7fe926a2a564941a370c1f7012/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/JoeNemo208/RecFunctions@95a1106b4c155a85022313c0a2d95f9fe320342a/script.js"></script>
     
     <script>
+Ready(function(){
   //console.log(Element.prototype)
     var prof=getId("imgpro");
     var signin=getId("signin");
@@ -758,6 +826,10 @@ var fcolor=CheckLS("webpage-208-fcolor","rgb(184, 238, 255)");
   var nav=getId("navbarop");
   var navdis=false;
   var navhov=false;
+  var updateTime=50;
+  
+  var scene=1;
+  var changePage;
   
 var body=getTag("body")[0];
 nav.addEventListener('click',function(){
@@ -769,7 +841,32 @@ navhov=false;
 }
 
 })
+var changePage=function(x){
+    timer=100;
+    var buttons=getClass("button1");
+var navbuttons=getClass("navbutton1");
+var content1=getClass("content1");
+var btn=getClass("btn")
+scene=x;
 
+for(var i=0;i<btn.length;i++){
+if(scene===i+1){
+content1[i].style.display="block";
+}
+else{
+content1[i].style.display="none";
+}
+console.log(scene)
+}
+};
+
+changePage(1);
+/*
+else if(page===-1){
+signin.style.display="block";
+content1[i].style.display="none";
+}
+*/
 
 var doIt=function(){
 
@@ -796,25 +893,10 @@ navdis=false;
 
 
 
-for(var i=0;i<navbuttons.length;i++){
-
-if(page===i+1){
-content1[i].style.display="block";
-}
-else if(page===-1){
-signin.style.display="block";
-content1[i].style.display="none";
-}
-
-else{
-content1[i].style.display="none";
-signin.style.display="none"
-}
-
-}
 
 
-timer=timer-10;
+
+timer=timer-(updateTime/10);
 if(timer>=0){
 body.style.animation="newbody 1s linear 0s 1 normal";
 
@@ -828,12 +910,13 @@ body.style.backgroundColor=fcolor;
 if(avatar!==""){
 prof.src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/avatars/"+avatar+".png";
 }
-console.log(localStorage);
+//console.log(localStorage);
 //localStorage.clear();
 };
 var p1=function(){
-page=-1;
-timer=100;
+changePage(5);
+//console.log(scene)
+
 };
 prof.addEventListener("click",p1);
 
@@ -869,13 +952,14 @@ info1[i].value="";
 };
 subm.addEventListener("click",submIt);
 
-window.setInterval(doIt,100)
+window.setInterval(doIt,updateTime)
 
 
 /*('body').on("click mousedown mouseup focus blur keydown change dblclick mousemove mouseover mouseout mousewheel keydown keyup keypress textInput touchstart touchmove touchend touchcancel resize scroll zoom select change submit reset",function(e){
      console.log(e);
 }); */
 
+});
     </script>
     </body>
 </html>
