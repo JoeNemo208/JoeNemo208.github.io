@@ -15,8 +15,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
-         
-  
+    <!--Define Vars-->
+  <script>
+      var changePage;
+  </script>
     <!--Set up-->
     <style>
     :root{
@@ -673,23 +675,24 @@ font-family
     
 <div class="navbar1" id="navbarop" style="position:absolute; top:2px; left:5px;"><span style="font-family:'Material Icons'">menu</span></div>
     <nav>
-    <a class="navbutton1 page1" href="javascript:
-  
-    changePage(1);
+    <a class="navbutton1" href="javascript:
+    
+    changePage('page1');
     void 0;">Thing 1</a>
     
-    <a class="navbutton1 page2" href="javascript:
+    <a class="navbutton1" href="javascript:
     
-    changePage(2);
-    void 0;">Thing 2</a>
+    changePage('page2');
+    void 0;
+    ">Thing 2</a>
     
-    <a class="navbutton1 page3" href="javascript:
+    <a class="navbutton1" href="javascript:
     
-    changePage(3);
+    changePage('page3');
     void 0;">Thing 3</a>
     
-    <a class="navbutton1 page4" href="javascript:
-    changePage(4);
+    <a class="navbutton1" href="javascript:
+    changePage('page4');
     
     void 0;">Thing 4</a>
     </nav>
@@ -697,7 +700,7 @@ font-family
     <br>
     
  
-    <div class="content1 btn">
+    <div class="content1" id="page1">
     
     <div class="subtitle1">Bananaaaa</div>
     
@@ -711,20 +714,20 @@ font-family
    </div>
   
    
-   <div class="content1 btn" id="mem">
+   <div class="content1" id="page2">
     Page 2
   <!--  <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/avatars/aqualine-ultimate.png" width="400"> -->
    </div>
    
    
-   <div class="content1 btn">
+   <div class="content1" id="page3">
    <div class="img1">Howdy</div>
 Page 3
    </div>
-   <div class="content1 btn">
+   <div class="content1" id="page4">
     Page 4
    </div>
-   <div id="signin" class="content1 btn">
+   <div id="signin" class="content1">
    
     
     <input type="text" class="info1">
@@ -766,10 +769,11 @@ Page 3
    
     <script src="https://cdn.jsdelivr.net/gh/JoeNemo208/JSLib@f556b384f071b7cfce02eb20813948aab3c5c73f/script.js"></script>
     
-    <script src="https://cdn.jsdelivr.net/gh/JoeNemo208/RecFunctions@95a1106b4c155a85022313c0a2d95f9fe320342a/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/JoeNemo208/RecFunctions@2d34f7fb4ed15e7a09667be8431f51a7cee0198f/script.js"></script>
     
     <script>
 Ready(function(){
+    autoVars();
   //console.log(Element.prototype)
     var prof=getId("imgpro");
     var signin=getId("signin");
@@ -777,7 +781,33 @@ Ready(function(){
     var info1=getClass("info1");
     var te1=getId("typeenter1")
     
+    
+      var scene=1;
+ 
+  
+  changePage=function(x){
+    timer=100;
+    var buttons=getClass("button1");
+var navbuttons=getClass("navbutton1");
+var content1=getClass("content1");
+scene=x;
+var a=scene;
 
+for(var i=0;i<content1.length;i++){
+if(scene===content1[i].id){
+content1[i].style.display="block";
+}
+else{
+content1[i].style.display="none";
+}
+
+}
+};
+
+changePage("page1")
+window.setInterval(function(){
+console.log(changePage)
+},100)
 
     
     var CheckLS=function(a,b){
@@ -828,9 +858,8 @@ var fcolor=CheckLS("webpage-208-fcolor","rgb(184, 238, 255)");
   var navhov=false;
   var updateTime=50;
   
-  var scene=1;
-  var changePage;
-  
+
+
 var body=getTag("body")[0];
 nav.addEventListener('click',function(){
 if(navhov===false){
@@ -841,26 +870,8 @@ navhov=false;
 }
 
 })
-var changePage=function(x){
-    timer=100;
-    var buttons=getClass("button1");
-var navbuttons=getClass("navbutton1");
-var content1=getClass("content1");
-var btn=getClass("btn")
-scene=x;
 
-for(var i=0;i<btn.length;i++){
-if(scene===i+1){
-content1[i].style.display="block";
-}
-else{
-content1[i].style.display="none";
-}
-console.log(scene)
-}
-};
 
-changePage(1);
 /*
 else if(page===-1){
 signin.style.display="block";
@@ -914,7 +925,7 @@ prof.src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/bu
 //localStorage.clear();
 };
 var p1=function(){
-changePage(5);
+changePage("signin");
 //console.log(scene)
 
 };
