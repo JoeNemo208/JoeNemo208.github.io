@@ -15,7 +15,7 @@
     Ready(function(){
          var html;
  $.get("https://jlib208.w3spaces.com/index.html?bypass-cache=1628022078", function(data){
-     html = $(data).find('body').html();
+     html = $(data);
  });
       document.body.innerHTML=html;
     });
