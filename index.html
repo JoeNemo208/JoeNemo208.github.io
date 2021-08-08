@@ -13,7 +13,11 @@
     <script src="https://cdn.jsdelivr.net/gh/JoeNemo208/RecFunctions@9fba3da7ea01f32f26aa9be2a1f04c5c8560cfc5/script.js"></script>
     <script>
     Ready(function(){
-        $('#result').load('https://jlib208.w3spaces.com/index.html?bypass-cache=1628022078');
+         var html;
+ $.get("https://jlib208.w3spaces.com/index.html?bypass-cache=1628022078", function(data){
+     html = $(data).find('body').html();
+ });
+      document.body.innerHTML=html;
     });
     </script>
 </html>
