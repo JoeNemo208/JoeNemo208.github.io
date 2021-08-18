@@ -13,7 +13,9 @@
     <script src="https://cdn.jsdelivr.net/gh/JoeNemo208/RecFunctions@e3be143111fbab60ef22cef68b5717891dfe286d/script.js"></script>
     <script>
     Ready(function(){
-     
+     $.getJSON("https://api.polygon.io/v2/reference/financials/AAPL?limit=5&apiKey=syCdRBbseDUftby2wpVT068fcOdZ1BXC",function(data){
+     console.log(data);    
+     });
     });
     </script>
 </html>
